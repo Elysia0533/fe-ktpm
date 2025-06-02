@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Học Bộ Từ: あいさつ (Chào hỏi)</h1>
+        </header>
+         <nav class="main-nav">
+            <ul>
+                <li><a href="dashboard_student.html">Bảng Điều Khiển</a></li>
+                <li><a href="index.html">Đăng xuất</a></li>
+            </ul>
+        </nav>
+
+        <div class="section">
+            <div class="flashcard" id="myFlashcard">
+                <div class="term">こんにちは</div>
+                <div class="definition">Chào bạn / Xin chào (buổi chiều)</div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="button-secondary" onclick="document.getElementById('myFlashcard').classList.remove('flipped'); /* Cập nhật từ trước */">Từ Trước</button>
+                <button class="button" onclick="document.getElementById('myFlashcard').classList.toggle('flipped');">Lật Thẻ / Hiện Nghĩa</button>
+                <button class="button-secondary" onclick="document.getElementById('myFlashcard').classList.remove('flipped'); /* Cập nhật từ sau */">Từ Tiếp Theo</button>
+            </div>
+            <div style="text-align: center; margin-top: 15px;">
+                <button class="button">Đã Thuộc</button>
+                <button class="button-danger">Cần Ôn Lại</button>
+            </div>
+        </div>
+         <p style="text-align:center;"><a href="dashboard_student.html">&larr; Quay lại danh sách bộ từ</a></p>
+    </div>
+    <footer class="main-footer">
+        <p>2025 Ứng dụng Học Từ Vựng Tiếng Nhật VJPPRO</p>
+    </footer>
+</body>
+</html>

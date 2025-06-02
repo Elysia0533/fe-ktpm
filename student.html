@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Trang Học Sinh - Xin chào, User</h1>
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="dashboard_student.html" class="active">Bảng Điều Khiển</a></li>
+                <li><a href="class_view_student.html">Lớp Học Của Tôi</a></li>
+                <li><a href="profile_pro.html">Tài Khoản & Gói Pro</a></li>
+                <li><a href="index.html">Đăng xuất</a></li>
+            </ul>
+        </nav>
+
+        <div class="section">
+            <h2>Bộ Từ Của Giáo Viên</h2>
+            <ul class="deck-list">
+                <li><a href="study_page.html?deckId=gv1">Lớp N5 - Bài 1: あいさつ (Chào hỏi)</a> <span>(Giáo viên: namae no nai)</span></li>
+                <li><a href="study_page.html?deckId=gv2">Lớp N5 - Bài 2: かぞく (Gia đình)</a> <span>(Giáo viên: namae no nai)</span></li>
+            </ul>
+            <p>Không có bộ từ nào được giao thêm.</p>
+        </div>
+
+        <div class="section">
+            <h2>Bộ Từ Cá Nhân Của Bạn (1/3 bộ từ đã tạo)</h2>
+            <ul class="deck-list">
+                <li>
+                    <div>
+                        <a href="study_page.html?deckId=hs1">Từ vựng JLPT N5 Kanji (Tuần 1)</a>
+                        <br><small>Số từ: 35/50</small>
+                    </div>
+                    <div>
+                        <a href="#" class="button button-secondary button-small">Sửa</a>
+                        <a href="#" class="button button-danger button-small">Xóa</a>
+                    </div>
+                </li>
+            </ul>
+            <a href="deck_creation_student.html" class="button">Tạo Bộ Từ Mới</a>
+             <p style="font-size: 0.9em; color: #777;">Bạn có thể tạo tối đa 3 bộ từ cá nhân. Xóa bộ từ cũ để tạo thêm nếu đã đạt giới hạn.</p>
+        </div>
+
+    </div>
+    <footer class="main-footer">
+        <p>2025 Ứng dụng Học Từ Vựng Tiếng Nhật VJPPRO</p>
+    </footer>
+</body>
+</html>
