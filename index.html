@@ -3,48 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập - Ứng dụng Học Từ Vựng Tiếng Nhật</title>
+    <title>Đăng nhập - Phần mềm học tiếng Nhật やれ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="login-page-body">
     <header class="login-page-header">
-        <h1>Ứng dụng Học Từ Vựng Tiếng Nhật</h1>
+        <h1>Phần mềm học tiếng Nhật やれ</h1>
     </header>
 
     <div class="login-container">
-        <h2 style="text-align: center; color: #333; font-family: 'Roboto', sans-serif; border-bottom: none; margin-bottom: 25px;">Đăng nhập Tài khoản</h2>
+        <h2 class="form-title">Đăng nhập Tài khoản</h2>
         <form action="#">
             <div class="form-group">
-                <label for="role_select">Chọn vai trò của bạn:</label>
-                <select id="role_select" name="role" class="form-control">
-                    <option value="student" selected>Học Sinh</option>
-                    <option value="teacher">Giáo Viên</option>
-                    <option value="external">Người Dùng Ngoài</option>
-                    </select>
-            </div>
-
-            <div class="form-group">
-                <label for="username">Tên đăng nhập / Email:</label>
-                <input type="text" id="username" name="username" class="form-control" placeholder="Nhập tên đăng nhập hoặc email">
+                <label for="username">Email:</label>
+                <input type="email" id="username" name="username" class="form-control" placeholder="Nhập email của bạn">
             </div>
             <div class="form-group">
                 <label for="password">Mật khẩu:</label>
                 <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu">
             </div>
 
-            <a href="student.html" class="button" style="width: 100%; text-align: center; display: block; box-sizing: border-box; margin-top: 20px; padding: 12px 18px; font-size: 1.1em; background-color: #005A9E;">Đăng nhập</a>
-            <p style="font-size: 0.85em; text-align: center; margin-top: 15px; color: #555;">
-                (Trong bản xem trước này, trang đích sau đăng nhập sẽ mặc định là trang Học Sinh. Ở ứng dụng thực tế, trang đích sẽ phụ thuộc vào vai trò bạn chọn.)
-            </p>
+            <div class="form-options">
+                <a href="forgot_password.html" class="form-link">Quên mật khẩu?</a>
+            </div>
+            
+            <p style="font-size: 0.9em; color: #666; text-align: center; margin-bottom: 10px;">(Đây là bản xem trước, hãy chọn vai trò để đăng nhập)</p>
+            <a href="teacher_dashboard.html" class="button" style="width: 100%; text-align: center; display: block; box-sizing: border-box; margin: 5px 0;">Đăng nhập (vai trò Giáo viên)</a>
+            <a href="student_dashboard.html" class="button button-secondary" style="width: 100%; text-align: center; display: block; box-sizing: border-box; margin: 5px 0;">Đăng nhập (vai trò Học sinh)</a>
+            
         </form>
-        <p style="margin-top: 25px; text-align: center; font-size: 0.9em;">
-            Chưa có tài khoản? <a href="register.html" style="color: #005A9E; text-decoration: none;">Đăng ký</a>
+        <p class="form-footer-text">
+            Chưa có tài khoản? <a href="register.html" class="form-link">Đăng ký tại đây</a>
         </p>
     </div>
 
-    <footer class="main-footer" style="background-color: transparent; color: #6c757d; padding-top: 30px; padding-bottom: 20px; font-size: 0.85em;">
-        <p>2025 Ứng dụng Học Từ Vựng Tiếng Nhật VJPPRO</p>
-       
+    <footer class="main-footer login-footer">
+        <p>2025 Phần mềm học tiếng Nhật やれ.</p>
     </footer>
 </body>
 </html>

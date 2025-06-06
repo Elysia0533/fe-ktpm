@@ -3,41 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Ký - Ứng dụng Học Từ Vựng Tiếng Nhật</title>
+    <title>Đăng Ký - Phần mềm học tiếng Nhật やれ</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-page-body"> <header class="login-page-header">
-        <h1>Ứng dụng Học Từ Vựng Tiếng Nhật</h1>
+<body class="login-page-body">
+    <header class="login-page-header">
+        <h1>Phần mềm học tiếng Nhật やれ</h1>
     </header>
 
-    <div class="login-container" style="text-align: center; max-width: 600px;"> <h2 style="color: #333; font-family: 'Roboto', sans-serif; border-bottom: none; margin-bottom: 25px;">Đăng Ký Tài Khoản Mới</h2>
+    <div class="login-container">
+        <h2 class="form-title">Đăng Ký Tài Khoản Mới</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="register-fullname">Họ và Tên:</label>
+                <input type="text" id="register-fullname" name="register-fullname" class="form-control" placeholder="Nhập họ và tên của bạn">
+            </div>
+             <div class="form-group">
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="register-email" class="form-control" placeholder="Nhập email của bạn">
+            </div>
+            <div class="form-group">
+                <label for="register-password">Mật khẩu:</label>
+                <input type="password" id="register-password" name="register-password" class="form-control" placeholder="Tạo mật khẩu (tối thiểu 6 ký tự)">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Xác nhận mật khẩu:</label>
+                <input type="password" id="confirm-password" name="confirm-password" class="form-control" placeholder="Nhập lại mật khẩu">
+            </div>
 
-        <div class="section" style="background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; padding: 20px; border-radius: 6px; margin-bottom: 30px;">
-            <h3 style="margin-top: 0; color: #856404; font-size: 1.3em;">Tính năng Đang Được Phát Triển!</h3>
-            <p>Chúng tôi đang nỗ lực hoàn thiện tính năng đăng ký tài khoản và sẽ sớm ra mắt.</p>
-            <p>Cảm ơn sự kiên nhẫn và mong muốn đồng hành của bạn!</p>
-        </div>
-
-        <div class="section donate-section" style="border-top: 1px solid #e0e0e0; padding-top: 25px;">
-            <h3 style="color: #005A9E; margin-bottom: 15px; font-size: 1.4em;">Ủng Hộ Đội Ngũ Phát Triển</h3>
-            <p style="font-size: 0.95em; color: #495057; margin-bottom: 10px;">Nếu bạn yêu thích và muốn hỗ trợ dự án này phát triển nhanh hơn với nhiều tính năng hấp dẫn, bạn có thể ủng hộ đội ngũ chúng tôi qua mã QR bên dưới.</p>
-            <p style="font-size: 0.95em; color: #495057; margin-bottom: 20px;">Mọi sự đóng góp, dù nhỏ, đều là nguồn động viên to lớn!</p>
-            
-            <img src="QR.jpg" alt="Mã QR ủng hộ VietQR Napas 247" style="max-width: 260px; width: 100%; height: auto; margin-top: 10px; border: 2px solid #005A9E; padding: 6px; border-radius: 8px; background-color: white;">
-            
-            <p style="margin-top: 12px; font-size: 1em; color: #333; font-weight: 500;">
-                TRAN TIEN DUC <br> 0352095415
-            </p>
-            <p style="font-size: 0.8em; color: #777;">(Quét mã VietQR để ủng hộ)</p>
-        </div>
-
-        <p style="margin-top: 35px;">
-            <a href="index.html" class="button button-secondary" style="background-color: #6c757d; padding: 10px 20px;">Quay lại trang Đăng nhập</a>
+            <a href="index.html" class="button" style="width:100%; text-align:center; box-sizing:border-box; margin:10px 0;">Đăng ký</a>
+        </form>
+        <p class="form-footer-text">
+            Đã có tài khoản? <a href="index.html" class="form-link">Đăng nhập ngay</a>
         </p>
     </div>
 
-    <footer class="main-footer" style="background-color: transparent; color: #6c757d; padding-top: 30px; padding-bottom: 20px; font-size: 0.85em;">
-        <p>2025 Ứng dụng Học Từ Vựng Tiếng Nhật VJPPRO</p>
+    <footer class="main-footer login-footer">
+        <p>2025 Phần mềm học tiếng Nhật やれ.</p>
     </footer>
 </body>
 </html>

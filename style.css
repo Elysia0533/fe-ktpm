@@ -6,6 +6,7 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
+    background-color: #f4f7f6;
 }
 
 body.login-page-body {
@@ -17,18 +18,95 @@ body.login-page-body {
     padding-top: 0;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/* Bố cục cho các trang Dashboard */
+.dashboard-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
 }
 
+.sidebar {
+    width: 260px;
+    background-color: #2c3e50; /* Màu xanh đậm cho sidebar */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #34495e;
+    margin-bottom: 20px;
+}
+.sidebar-header h2 {
+    color: #ecf0f1;
+    font-size: 1.5em;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-header p {
+    color: #bdc3c7;
+    font-size: 0.9em;
+    margin: 5px 0 0;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li a.active {
+    background-color: #34495e;
+    color: white;
+    padding-left: 25px;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #34495e;
+}
+.sidebar-footer a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #ecf0f1;
+    overflow-y: auto;
+}
+.main-content h1 {
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 15px;
+}
+
+/* Style cho trang đăng nhập */
 .login-page-header {
-    background-color: #005A9E;
+    background-color: #2c3e50;
     color: white;
     padding: 25px 20px;
     text-align: center;
@@ -53,54 +131,8 @@ body.login-page-body {
     border-radius: 8px;
 }
 
-header.main-header {
-    background-color: #4A90E2;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    border-radius: 8px 8px 0 0;
-    margin-bottom: 20px;
-}
-header.main-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-nav.main-nav {
-    background-color: #3c78c0;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-nav.main-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav.main-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav.main-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-nav.main-nav ul li a:hover,
-nav.main-nav ul li a.active {
-    background-color: #2a5a98;
-}
-
 h2 {
-    color: #4A90E2;
+    color: #2c3e50;
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
     margin-top: 0;
@@ -109,15 +141,16 @@ h2 {
 
 .section {
     margin-bottom: 30px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #eee;
-    border-radius: 5px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .button, button, input[type="submit"] {
     display: inline-block;
-    background-color: #005A9E;
+    background-color: #3498db;
     color: white;
     padding: 10px 18px;
     border: none;
@@ -132,22 +165,22 @@ h2 {
 }
 
 .button:hover, button:hover, input[type="submit"]:hover {
-    background-color: #004a80;
+    background-color: #2980b9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
 .button-secondary {
-    background-color: #777;
+    background-color: #95a5a6;
 }
 .button-secondary:hover {
-    background-color: #555;
+    background-color: #7f8c8d;
 }
 
 .button-danger {
-    background-color: #D9534F;
+    background-color: #e74c3c;
 }
 .button-danger:hover {
-    background-color: #C9302C;
+    background-color: #c0392b;
 }
 
 .form-control {
@@ -162,20 +195,9 @@ h2 {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control:focus {
-    border-color: #4A90E2;
+    border-color: #3498db;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
-}
-
-select.form-control {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%208l5%205%205-5z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    background-position: right 15px center;
-    background-size: 16px 16px;
-    padding-right: 40px;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
 }
 
 .form-group {
@@ -196,11 +218,11 @@ select.form-control {
 }
 
 .deck-list li, .class-list li, .word-list li, .student-list li {
-    background-color: #e9eff5;
-    padding: 12px;
-    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
     border-radius: 4px;
-    border-left: 5px solid #4A90E2;
+    border-left: 5px solid #3498db;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -208,58 +230,68 @@ select.form-control {
 
 .deck-list li a, .class-list li a {
     text-decoration: none;
-    color: #337ab7;
-    font-weight: 500;
-}
-
-.flashcard {
-    background-color: #fff8e1;
-    border: 1px solid #ffe0b2;
-    border-radius: 8px;
-    padding: 30px;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 20px auto;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.flashcard .term {
-    font-size: 2.5em;
+    color: #2980b9;
     font-weight: bold;
-    color: #5d4037;
-    font-family: 'Noto Sans JP', sans-serif;
-    margin-bottom: 15px;
 }
 
-.flashcard .definition {
-    font-size: 1.5em;
-    color: #795548;
-    font-family: 'Noto Sans JP', sans-serif;
-    display: none;
+small {
+    font-size: 0.9em;
+    color: #7f8c8d;
 }
 
-.flashcard.flipped .definition {
-    display: block;
-}
-
-footer.main-footer {
+.form-title {
     text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #343a40;
-    color: #f8f9fa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: none;
+    margin-bottom: 25px;
+}
+
+.form-options {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.form-link {
+    color: #3498db;
+    text-decoration: none;
     font-size: 0.9em;
 }
-body.login-page-body footer.main-footer {
-    background-color: transparent;
-    color: #6c757d;
-    padding-top: 30px;
-    padding-bottom: 20px;
+
+.form-link:hover {
+    text-decoration: underline;
+}
+
+.form-footer-text {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.login-footer {
+    background-color: transparent !important;
+    color: #6c757d !important;
+    padding-top: 30px !important;
+    padding-bottom: 20px !important;
+    font-size: 0.85em !important;
+}
+
+.button-small {
+    padding: 5px 10px;
     font-size: 0.85em;
-    width: 100%;
-    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.inline-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.inline-form .form-control {
+    margin-bottom: 0; 
+}
+
+.inline-form button {
+    margin-top: 0; 
 }
