@@ -3,39 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập - Phần mềm học tiếng Nhật やれ</title>
+    <title>Phần mềm học tiếng Nhật やれ</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-page-body">
-    <header class="login-page-header">
-        <h1> やれ</h1>
+<body>
+    <header class="guest-header">
+        <a href="index.html" class="logo">やれ</a>
+        <div class="nav-buttons">
+            <a href="login.html" class="button button-secondary">Đăng nhập</a>
+            <a href="register.html" class="button">Đăng ký</a>
+        </div>
     </header>
 
-    <div class="login-container">
-        <h2 class="form-title">Đăng nhập Tài khoản</h2>
-        <form action="#">
-            <div class="form-group">
-                <label for="username">Email:</label>
-                <input type="email" id="username" name="username" class="form-control" placeholder="Nhập email của bạn">
-            </div>
-            <div class="form-group">
-                <label for="password">Mật khẩu:</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Nhập mật khẩu">
-            </div>
+    <main>
+        <section class="hero-section">
+            <h1>Học Tiếng Nhật Hiệu Quả và Linh Hoạt</h1>
+            <p>Tạo lớp học, giao bài tập, theo dõi tiến độ và học tập mọi lúc, mọi nơi.</p>
+            <a href="register.html" class="button" style="font-size: 1.1em; padding: 12px 25px;">Bắt đầu ngay miễn phí</a>
+        </section>
 
-            <div class="form-options">
-                <a href="forgot_password.html" class="form-link">Quên mật khẩu?</a>
+        <div style="width: 90%; max-width: 1200px; margin: 40px auto;">
+            <div class="section">
+                <h2>Bài học công khai</h2>
+                <p>Khám phá các bài học có sẵn trên hệ thống của chúng tôi. Đăng nhập để lưu tiến độ và tham gia các lớp học khác!</p>
+                <ul class="deck-list">
+                    <li>
+                        <div>
+                            <a href="study.html">Bài 1: Bảng chữ cái Hiragana</a>
+                            <br><small>Học cách viết và phát âm bảng chữ mềm.</small>
+                        </div>
+                        <a href="study.html" class="button button-small">Học thử</a>
+                    </li>
+                     <li>
+                        <div>
+                            <a href="study.html">Bài 2: Chào hỏi cơ bản (あいさつ)</a>
+                            <br><small>Các mẫu câu chào hỏi thông dụng trong ngày.</small>
+                        </div>
+                        <a href="study.html" class="button button-small">Học thử</a>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="study.html">Bài 3: Giới thiệu bản thân (自己紹介)</a>
+                            <br><small>Học cách giới thiệu tên, tuổi và nghề nghiệp.</small>
+                        </div>
+                        <a href="study.html" class="button button-small">Học thử</a>
+                    </li>
+                </ul>
             </div>
-            
-            <p style="font-size: 0.9em; color: #666; text-align: center; margin-bottom: 10px;">(Đây là bản xem trước, hãy chọn vai trò để đăng nhập)</p>
-            <a href="teacher_dashboard.html" class="button" style="width: 100%; text-align: center; display: block; box-sizing: border-box; margin: 5px 0;">Đăng nhập (vai trò Giáo viên)</a>
-            <a href="student_dashboard.html" class="button button-secondary" style="width: 100%; text-align: center; display: block; box-sizing: border-box; margin: 5px 0;">Đăng nhập (vai trò Học sinh)</a>
-            
-        </form>
-        <p class="form-footer-text">
-            Chưa có tài khoản? <a href="register.html" class="form-link">Đăng ký tại đây</a>
-        </p>
-    </div>
+        </div>
+    </main>
 
     <footer class="main-footer login-footer">
         <p>2025 Phần mềm học tiếng Nhật やれ.</p>
